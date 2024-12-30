@@ -17,3 +17,9 @@ export function calculateAverage(arr) {
   else return arr.reduce((x,y)=>x+y/(arr.length),0)
 
 }
+
+export function factorial(n) {
+  if (n===0) return 1;
+  else return n*factorial(n-1);
+  
+}

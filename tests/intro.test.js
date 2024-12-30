@@ -1,6 +1,6 @@
 
 import {describe, it ,test,expect} from "vitest";
-import { calculateAverage, fizzBuzz, max } from "../src/intro";
+import { calculateAverage, factorial, fizzBuzz, max } from "../src/intro";
 
 describe('max',()=>{
     it('should return the first argument if its greater',()=>{
@@ -65,4 +65,23 @@ describe('calculateAverage',()=>{
     it('should return the average of the numbers',()=>{
         expect(calculateAverage([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15])).toBe(8);
     });
+})
+
+describe('factorial',()=>{
+    it('should return 1 if n is 0',()=>{
+        expect(factorial(0)).toBe(1);
+    });
+    it('should return 1 if n is 1',()=>{
+        expect(factorial(1)).toBe(1);
+    });
+    it('should return 2 if n is 2',()=>{
+        expect(factorial(2)).toBe(2);
+    });
+    it('should return 6 if n is 3',()=>{
+        expect(factorial(3)).toBe(6);
+    });
+    it('should return 24 if n is 4',()=>{
+        expect(factorial(4)).toBe(24);
+    });
+
 })
